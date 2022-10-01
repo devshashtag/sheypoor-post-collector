@@ -29,11 +29,7 @@
 
 ```bash
 
-<br />
-
 git clone "https://github.com/DevsHashtag/sheypoor-post-collector.git"
-
-<br />
 
 cd sheypoor-post-collector
 
@@ -43,7 +39,11 @@ npm run server
 
 ```
 
+<br />
+
 **goto**: http://localhost:8080/
+
+<br />
 
 ## how to use
 
@@ -72,7 +72,7 @@ npm run server
 ![collector download](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/collector-download.png)
 <br />
 
-6.you can go back if you want and start over but all downloaded posts will be lost unless you downloaded it as json <br /><br />
+6. you can go back if you want and start over but all downloaded posts will be lost unless you downloaded it as json <br /><br />
 
 ## Errors
 
