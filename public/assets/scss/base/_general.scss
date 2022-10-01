@@ -1,0 +1,24 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  max-width: $section-max-width;
+  margin: 0 auto;
+}
+
+%responsive-area {
+  width: 100%;
+  min-width: 250px;
+  max-width: 500px;
+
+  @include breakpoint(md) {
+    width: 50vw;
+  }
+
+  @include breakpoint(lg) {
+    width: 60vw;
+  }
+}

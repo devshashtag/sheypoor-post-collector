@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- icons -->
+  <link rel="icon" sizes="16x16" href="/assets/icons/16.png">
+  <link rel="icon" sizes="192x192" href="/assets/icons/192.png">
+  <link rel="icon" sizes="128x128" href="/assets/icons/128.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="/assets/icons/128.png">
+  <meta name="msapplication-TileImage" content="/assets/icons/144.png">
+  <!-- styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  <title>صفحه اصلی</title>
+</head>
+
+<body>
+  <!-- sheypoor -->
+  <main class="sheypoor">
+    <!-- contact -->
+    <section class="sheypoor__contact active">
+      <!-- heading -->
+      <div class="contact__heading">
+        <img src="/assets/icons/logo.png" alt="logo">
+      </div>
+      <!-- selector -->
+      <div class="contact__cities">
+        <!-- selected -->
+        <div class="cities__selected">
+          <span class="city__selected">
+            <!-- default city -->
+          </span>
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
+        <!-- dropdown -->
+        <div class="cities__dropdown">
+          <!-- search -->
+          <input class="cities__search" type="text" placeholder="جستجو ..." id="citiesSearch">
+          <!-- options -->
+          <div class="cities__options">
+            <!-- option -->
+          </div>
+        </div>
+      </div>
+      <!-- pages -->
+      <div class="contact__pages">
+        <!-- start -->
+        <input class="pages__number" type="number" id="pageStart" placeholder="صفحه شروع" min="1" max="10000">
+        <!-- end -->
+        <input class="pages__number" type="number" id="pageEnd" placeholder="صفحه پایان" min="1" max="10000">
+      </div>
+
+      <!-- submit button -->
+      <button class="contact__submit">جستجو</button>
+    </section>
+    <!-- end contact -->
+
+    <!-- collector -->
+    <section class="sheypoor__collector">
+      <!-- header -->
+      <div class="collector__header">
+        <!-- title -->
+        <span class="header__title">پست ها</span>
+        <!-- options -->
+        <div class="header__options">
+          <!-- continue -->
+          <div class="options__back" title="بازگشت به صفحه اصلی">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </div>
+          <!-- continue -->
+          <div class="options__continue" title="ادامه فرایند">
+            <i class="fa fa-refresh" aria-hidden="true"></i>
+          </div>
+          <!-- download -->
+          <div class="options__download" title="برای دانلود کلیک کنید">
+            <i class="fa fa-download" aria-hidden="true"></i>
+          </div>
+          <!-- status -->
+          <div class="options__status">
+            <!-- loading -->
+            <div class="status__loading" title="درحال دریافت اطلاعات. لطفا صبر کنید">
+              <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+            </div>
+            <!-- done -->
+            <div class="status__done" title="اطلاعات با موفقیت دریافت شد">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+            <!-- failed -->
+            <div class="status__failed" title="در دریافت اطلاعات مشکلی پیش امده">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post -->
+      <div class="collector__post">
+        <!-- header -->
+        <div class="post__header">
+          <!-- title -->
+          <div class="header__title">عنوان</div>
+          <!-- time -->
+          <div class="header__time">زمان</div>
+          <!-- city -->
+          <div class="header__city">شهر</div>
+          <!-- contact -->
+          <div class="header__contact">شماره</div>
+        </div>
+        <!-- items & page numbers -->
+      </div>
+    </section>
+    <!-- end collector -->
+  </main>
+  <!-- end sheypoor -->
+
+  <!-- scripts -->
+  <script type="module" src="/assets/js/script.js"></script>
+</body>
+
+</html>

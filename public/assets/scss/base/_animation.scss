@@ -1,0 +1,11 @@
+$percent: 10;
+$s: 50%;
+$l: 96%;
+
+@keyframes animationColors {
+  @for $i from 0 through calc($percent) {
+    #{$i * 10%} {
+      background-color: hsl(($i * 36) $s $l);
+    }
+  }
+}
