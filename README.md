@@ -1,6 +1,6 @@
 # about
 
-\*this app helps you to collect **_PUBLIC DATA_** from sheypoor posts with json format\* <br />
+this app helps you to collect **_PUBLIC DATA_** from sheypoor posts with json format <br />
 
 <br />
 
