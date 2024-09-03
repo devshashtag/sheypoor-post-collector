@@ -1,6 +1,6 @@
-# about
+# Sheypoor Post Collector
 
-this app helps you to collect **_PUBLIC DATA_** from sheypoor posts with json format <br />
+This Node.js application allows you to easily collect **_publicly available data_** from Sheypoor posts in JSON format.<br />
 
 <br />
 
@@ -14,83 +14,74 @@ this app helps you to collect **_PUBLIC DATA_** from sheypoor posts with json fo
 
 ![collector status-done view](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/collected-data.png)
 
-# requirements
+# Requirements
 
-- npm
-- nodejs
+- Node.js: Download and install Node.js from https://nodejs.org/
+- npm (Node Package Manager): Comes bundled with Node.js.
 
-## npm dependencies
+## NPM Dependencies
 
 - axios
 - cheerio
 - express
 
-# install
+# Installation
+
+1.download and install node.js and dependencies
 
 ```bash
-
-git clone "https://github.com/DevsHashtag/sheypoor-post-collector.git"
-
+git clone "https://github.com/devshashtag/sheypoor-post-collector.git"
 cd sheypoor-post-collector
-
 npm install
-
 npm run server
-
 ```
 
 <br />
 
-**goto**: http://localhost:8080/
+2.open your web browser and visit: http://127.0.0.1:8080
 
 <br />
 
-## how to use
-
-1. select a city <br />
+3.Use the dropdown menu to choose the city you want to collect data from <br />
 
 ![home dropdown](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/home-dropdown.png)
 <br />
 
-2. set start page, end page that you want to download posts ( min: 1, max: 10000) <br />
+4.Enter the starting and ending page numbers (minimum 1, maximum 10000) <br />
 
 ![home page-numbers valid-ranges](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/home-page-numbers-valid-ranges.png)
 <br />
 
-3. click on جستجو(search) and wait for app to download data <br />
+5.Click the "جستجو" (Search) button. The app will begin downloading posts <br />
 
 ![collector view](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/collector-view.png)
 <br />
 
-4. after a while you can see data loaded for each page <br />
+6.ou can see the progress of the download for each page <br />
 
 ![collector post link](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/collector-post-link.png)
 <br />
 
-5. you can click on download button at any moment or you can wait for app to finish downloading <br />
+7.Once the download is complete or at any time during the process, click the "Download" button to save the data in JSON format <br />
 
 ![collector download](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/collector-download.png)
 <br />
 
-6. you can go back if you want and start over but all downloaded posts will be lost unless you downloaded it as json <br /><br />
+8.You can go back to the home screen and begin a new data collection. However, any posts downloaded during the previous session will be lost unless you've saved them as a JSON file.
 
-## Errors
+## Error Handling
 
-**due to api limit after a while you'll get a error message ( every 10 page ) and you have to change your ip to continue**: <br />
+**API rate limits:** Due to API limitations, you may encounter an error message every 10 pages. To continue downloading, you need to change your IP address. <br />
 
-- if you are with wifi you have to restart you'r wifi to get new ip
-- if you are with mobile networks you have to simply turn off and turn on your mobile data
+1.If you're using Wi-Fi, restart your router.
+2.If you're using mobile data, turn your mobile data off and on again.
 
-_click on continue to download other pages_
+and then click **continue button** to download the remaining pages.
 
 ![collector alert limit](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/collector-alert-limit.png)
 
 <br />
 
-**if you dont have internet turn on, you'll get this error and app is waiting for you to turn it on** <br />
+**No internet connection**: If you don't have an internet connection, you'll receive an error message. Ensure your internet connection is active before starting the download. <br />
 
 ![collector alert error](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/collector-alert-error.png)
-
-# screenshots
-
-[more screenshots](https://github.com/DevsHashtag/sheypoor-post-collector/tree/main/screenshot)
