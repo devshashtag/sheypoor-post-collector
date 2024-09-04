@@ -1,7 +1,7 @@
 # Sheypoor Post Collector
 
-This Node.js application allows you to easily collect **_publicly available data_** from Sheypoor posts in JSON format.<br />
-
+This Node.js application simplifies the process of gathering **_publicly available_** Sheypoor posts, converting them into a structured JSON format for easy analysis and use.
+<br />
 <br />
 
 ![home](https://github.com/devshashtag/sheypoor-post-collector-nodejs/blob/main/screenshot/home.png)
